@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Details about our Moroccan programs - MerrakechyTours">
+    <title>Program Details | MerrakechyTours</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/Logos/logo.png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu Overlay (for mobile) -->
+    <div class="menu-overlay"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="/assets/images/Logos/logo.png" alt="Logo" class="preloader-logo">
+    </div>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Merrakechy<span>Tours </span></h1>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-right">
+                             <a href="pages/services.html" class="btn btn-primary">Book Now</a>
+
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero" id="program-hero">
+        <!-- Dynamic background image will be set by JavaScript -->
+        <div class="container">
+            <div class="page-hero-content">
+                <h1 id="program-title">Loading Program...</h1>
+                <p id="program-subtitle">Please wait while we load the program details</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Detail Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="tour-detail-container">
+                <div class="tour-detail-main">
+                    <div class="tour-detail-gallery">
+                        <img id="program-image" src="../assets/images/" alt="Program Image">
+                    </div>
+
+                    <div class="tour-detail-content">
+                        <div class="tour-detail-header">
+                            <div class="tour-meta" id="program-meta">
+                                <!-- Dynamic meta data will be added by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="tour-detail-description" id="program-description">
+                            <!-- Dynamic description will be added by JavaScript -->
+                        </div>
+
+                        <div class="tour-detail-itinerary" id="program-itinerary">
+                            <!-- Dynamic itinerary will be added by JavaScript if applicable -->
+                        </div>
+
+                        <div class="tour-detail-features">
+                            <h3>What's Included</h3>
+                            <ul class="feature-list" id="program-includes">
+                                <!-- Dynamic inclusions will be added by JavaScript -->
+                            </ul>
+
+                            <h3>What to Bring</h3>
+                            <ul class="feature-list" id="program-bring">
+                                <!-- Dynamic "what to bring" items will be added by JavaScript -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-detail-sidebar">
+                    <div class="sidebar-box">
+                        <div class="price-box">
+                            <div class="price-label">Price From</div>
+                            <div class="price-value">€<span id="program-price">0</span><small
+                                    id="price-unit">/person</small></div>
+                        </div>
+                        <a href="checkout.html" id="booking-link" class="btn btn-primary btn-full">Book Now</a>
+                        <a href="contact.html" class="btn btn-outline btn-full">Ask a Question</a>
+                        <div id="custom-pricing-message" class="custom-pricing-notice" style="display: none;">
+                            <div class="pricing-notice-content">
+                                <i class="fas fa-info-circle"></i>
+                                <span>For custom pricing and private tours, please contact us</span>
+                            </div>
+                            <a href="contact.html" class="btn btn-outline btn-full">Contact us for Custom price</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3>Availability</h3>
+                        <p class="sidebar-text" id="program-availability">Loading availability information...</p>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3>Additional Information</h3>
+                        <div class="sidebar-meta" id="program-additional">
+                            <!-- Dynamic additional information will be added by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Programs Section -->
+    <section class="related-tours section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>You May Also Like</h2>
+                <p>Explore our other popular programs</p>
+            </div>
+
+            <div class="tours-grid" id="related-programs">
+                <!-- Dynamic related programs will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section-padding">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Explore Morocco?</h2>
+                <p>Start planning your adventure today</p>
+                <div class="cta-buttons">
+                    <a href="services.html" class="btn btn-light">Browse Tours</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../assets/images/Logos/logo.png" alt="MerrakechyTours Logo" class="footer-logo">
+                        </a>
+                    </div>
+                    <p>We provide authentic travel experiences in Morocco, focusing on activities, tours, and
+                        transportation services that showcase the best of our beautiful country.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> MerrakechyTours Office, Bab Al Khmis, Marrakech 40000,
+                            Morocco</li>
+                        <li><i class="fas fa-phone"></i> +212666698732</li>
+                        <li><i class="fas fa-envelope"></i> aitaliyassir55@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Open Daily: 8AM - 8PM</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 MerrakechyTours. All rights reserved. Powered by SiteQome</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="/pages/contact.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="contact-options-wrapper">
+        <button class="contact-options-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <div class="contact-options-menu">
+            <div class="contact-option-title">Contact Us</div>
+            <a href="https://wa.me/+212666698732" class="contact-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp(1)</span>
+            </a>
+            <a href="https://wa.me/+212662016470" class="contact-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp(2)</span>
+            </a>
+            <a href="tel:+212666698732" class="contact-option phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call Us (1)</span>
+            </a>
+            <a href="tel:+212662016470" class="contact-option phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call Us (2)</span>
+            </a>
+            <a href="mailto:aitaliyassir55@gmail.com" class="contact-option email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- Lightbox Structure -->
+<div class="lightbox-overlay" id="lightbox">
+    <div class="lightbox-content">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <img class="lightbox-image" id="lightbox-image" src="" alt="">
+    </div>
+</div>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/data/activities.js"></script>
+    <script src="../assets/js/data/tours.js"></script>
+    <script src="../assets/js/data/transportation.js"></script>
+    <script src="../assets/js/data/destinations.js"></script>
+    <script src="../assets/js/details.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a bit for other scripts to load program data
+    setTimeout(function() {
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category');
+        const id = urlParams.get('id');
+        
+        // Find program data
+        let programData = null;
+        
+        if (category === 'activity' && typeof activitiesData !== 'undefined') {
+            programData = activitiesData[id];
+        } else if (category === 'tour' && typeof toursData !== 'undefined') {
+            programData = toursData[id];
+        } else if (category === 'transportation' && typeof transportationData !== 'undefined') {
+            programData = transportationData[id];
+        }
+        
+        // Get elements
+        const customPricingMessage = document.getElementById('custom-pricing-message');
+        const normalPricingSection = document.querySelector('.pricing-section'); // Adjust this selector to match your pricing section class
+        const bookNowButton = document.getElementById('booking-link');
+        
+        // If you don't know the exact class, try these common selectors:
+        const pricingElements = document.querySelectorAll('.price, .pricing, .program-price, .cost, [class*="price"]');
+        
+        if (programData && programData.showCustomPricing === true) {
+            // Show custom pricing message
+            customPricingMessage.style.display = 'block';
+            
+            // Hide normal pricing section
+            if (normalPricingSection) {
+                normalPricingSection.style.display = 'none';
+            }
+            
+            // Hide all pricing elements
+            pricingElements.forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Hide Book Now button
+            if (bookNowButton) {
+                bookNowButton.style.display = 'none';
+            }
+            
+            console.log('Custom pricing mode activated');
+        } else {
+            // Hide custom pricing message
+            customPricingMessage.style.display = 'none';
+            
+            // Show normal pricing section
+            if (normalPricingSection) {
+                normalPricingSection.style.display = 'block';
+            }
+            
+            // Show all pricing elements
+            pricingElements.forEach(el => {
+                el.style.display = 'block';
+            });
+            
+            // Show Book Now button
+            if (bookNowButton) {
+                bookNowButton.style.display = 'block';
+            }
+            
+            console.log('Normal pricing mode activated');
+        }
+    }, 1000);
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete your booking for Moroccan adventures - MerrakechyTours">
+    <title>Checkout | MerrakechyTours</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/Logos/logo.png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Date Picker CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <!-- Menu Overlay (for mobile) -->
+    <div class="menu-overlay"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="/assets/images/Logos/logo.png" alt="Logo" class="preloader-logo">
+    </div>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Merrakechy<span>Tours </span></h1>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-right">
+                             <a href="pages/services.html" class="btn btn-primary">Book Now</a>
+
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),;">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Complete Your Booking</h1>
+                <p>Just a few steps away from your Moroccan adventure</p>
+                <!-- Add this inside your hero section -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <!-- Step 1: Checkout -->
+                        <div class="progress-step active" data-step="1">
+                            <div class="step-circle">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="step-label">Checkout</div>
+                        </div>
+
+                        <!-- Progress Line -->
+                        <div class="progress-line"></div>
+
+                        <!-- Step 2: Confirm -->
+                        <div class="progress-step" data-step="2">
+                            <div class="step-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="step-label">Confirm</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section section-padding">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-main">
+                    <div class="checkout-header">
+                        <h2>Booking Information</h2>
+                        <div class="program-showcase">
+                            <div class="program-image-container">
+                                <img id="program-image" src="" alt="Program Image" style="display: none;">
+                            </div>
+                            <div class="program-details">
+                                <p id="tour-title">Your selected program: <span id="program-name">Loading...</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="checkout-form" action="https://formsubmit.co/aitaliyassir55@gmail.com" method="POST">
+                        <!-- Hidden fields for FormSubmit -->
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/booking-confirmation.html">
+                        <input type="hidden" name="_subject" value="New Booking: MerrakechyTours">
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Hidden fields for program information -->
+                        <input type="hidden" id="category" name="category" value="">
+                        <input type="hidden" id="program-id" name="program-id" value="">
+                        <input type="hidden" id="program-price" name="program-price" value="">
+                        <input type="hidden" id="total-price" name="total_price" value="">
+                        <input type="hidden" id="program-name-hidden" name="program_name" value="">
+
+                        <!-- Personal Information -->
+                        <div class="checkout-section">
+                            <h3>Personal Information</h3>
+
+                            <div class="form-group">
+                                <label for="name">Full Name*</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address*</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number*</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nationality">Nationality*</label>
+                                    <select id="nationality" name="nationality" required>
+                                        <option value="">Select your nationality</option>
+                                        <option value="morocco">Morocco</option>
+                                        <option value="france">France</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="usa">USA</option>
+                                        <option value="uk">United Kingdom</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="canada">Canada</option>
+                                        <option disabled>──────────────────</option>
+                                        <option value="albania">Albania</option>
+                                        <option value="argentina">Argentina</option>
+                                        <option value="armenia">Armenia</option>
+                                        <option value="australia">Australia</option>
+                                        <option value="austria">Austria</option>
+                                        <option value="azerbaijan">Azerbaijan</option>
+                                        <option value="belarus">Belarus</option>
+                                        <option value="belgium">Belgium</option>
+                                        <option value="bosnia-herzegovina">Bosnia and Herzegovina</option>
+                                        <option value="brazil">Brazil</option>
+                                        <option value="bulgaria">Bulgaria</option>
+                                        <option value="china">China</option>
+                                        <option value="croatia">Croatia</option>
+                                        <option value="cyprus">Cyprus</option>
+                                        <option value="czech-republic">Czech Republic</option>
+                                        <option value="denmark">Denmark</option>
+                                        <option value="egypt">Egypt</option>
+                                        <option value="estonia">Estonia</option>
+                                        <option value="finland">Finland</option>
+                                        <option value="georgia">Georgia</option>
+                                        <option value="greece">Greece</option>
+                                        <option value="hungary">Hungary</option>
+                                        <option value="iceland">Iceland</option>
+                                        <option value="india">India</option>
+                                        <option value="iran">Iran</option>
+                                        <option value="iraq">Iraq</option>
+                                        <option value="japan">Japan</option>
+                                        <option value="jordan">Jordan</option>
+                                        <option value="kazakhstan">Kazakhstan</option>
+                                        <option value="kosovo">Kosovo</option>
+                                        <option value="kyrgyzstan">Kyrgyzstan</option>
+                                        <option value="latvia">Latvia</option>
+                                        <option value="lebanon">Lebanon</option>
+                                        <option value="lithuania">Lithuania</option>
+                                        <option value="malta">Malta</option>
+                                        <option value="mexico">Mexico</option>
+                                        <option value="moldova">Moldova</option>
+                                        <option value="montenegro">Montenegro</option>
+                                        <option value="netherlands">Netherlands</option>
+                                        <option value="macedonia">North Macedonia</option>
+                                        <option value="norway">Norway</option>
+                                        <option value="palestine">Palestine</option>
+                                        <option value="poland">Poland</option>
+                                        <option value="portugal">Portugal</option>
+                                        <option value="romania">Romania</option>
+                                        <option value="russia">Russia</option>
+                                        <option value="saudi-arabia">Saudi Arabia</option>
+                                        <option value="serbia">Serbia</option>
+                                        <option value="slovakia">Slovakia</option>
+                                        <option value="slovenia">Slovenia</option>
+                                        <option value="south-africa">South Africa</option>
+                                        <option value="sweden">Sweden</option>
+                                        <option value="switzerland">Switzerland</option>
+                                        <option value="syria">Syria</option>
+                                        <option value="tajikistan">Tajikistan</option>
+                                        <option value="turkey">Turkey</option>
+                                        <option value="turkmenistan">Turkmenistan</option>
+                                        <option value="uae">United Arab Emirates</option>
+                                        <option value="ukraine">Ukraine</option>
+                                        <option value="uzbekistan">Uzbekistan</option>
+
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="hotel">Hotel (if applicable)</label>
+                                    <input type="text" id="hotel" name="hotel">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Booking Details -->
+                        <div class="checkout-section">
+                            <h3>Booking Details</h3>
+
+                            <div class="form-group">
+                                <label for="date">Date*</label>
+                                <input type="text" id="date" name="date" class="datepicker" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="adults">Adults*</label>
+                                    <select id="adults" name="adults" required>
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="children">Children (0-12)</label>
+                                    <select id="children" name="children">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>      
+                                        <option value="12">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" name="special_requests" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Submit -->
+                        <div class="checkout-section">
+                            <div class="form-group form-checkbox">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">I agree to the <a href="privacy-policy.html" target="_blank">terms
+                                        and
+                                        conditions</a></label>
+                            </div>
+
+                            <div class="form-actions">
+                                <a href="javascript:history.back()" class="btn btn-outline">Back</a>
+                                <button type="submit" class="btn btn-primary">Complete Booking</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="checkout-sidebar">
+                    <div class="booking-summary">
+                        <h3>Booking Summary</h3>
+
+                        <div class="summary-item">
+                            <span class="summary-label">Program:</span>
+                            <span class="summary-value" id="summary-program">Loading...</span>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="summary-label">Date:</span>
+                            <span class="summary-value" id="summary-date">Select a date</span>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="summary-label">Participants:</span>
+                            <span class="summary-value" id="summary-participants">2 adults, 0 children</span>
+                        </div>
+
+                        <div class="summary-item">
+                            <span class="summary-label">Base Price:</span>
+                            <span class="summary-value"><span id="summary-price">0</span></span>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-item total">
+                            <span class="summary-label">Total Price:</span>
+                            <span class="summary-value">€<span id="summary-total">0</span></span>
+                        </div>
+                    </div>
+
+                    <div class="checkout-info">
+                        <h3>Booking Information</h3>
+                        <ul>
+                            <li><i class="fas fa-info-circle"></i> Free cancellation up to 24 hours before the tour</li>
+                            <li><i class="fas fa-info-circle"></i> Confirmation will be sent to your email</li>
+                            <li><i class="fas fa-info-circle"></i> Payment is made upon arrival/tour start</li>
+                            <li><i class="fas fa-info-circle"></i> Need help? <a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../assets/images/Logos/logo.png" alt="MerrakechyTours Logo" class="footer-logo">
+                        </a>
+                    </div>
+                    <p>We provide authentic travel experiences in Morocco, focusing on activities, tours, and
+                        transportation services that showcase the best of our beautiful country.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> MerrakechyTours Office, Bab Al Khmis, Marrakech 40000,
+                            Morocco</li>
+                        <li><i class="fas fa-phone"></i> +212666698732</li>
+                        <li><i class="fas fa-envelope"></i> aitaliyassir55@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Open Daily: 8AM - 8PM</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 MerrakechyTours. All rights reserved. Powered by SiteQome</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/pages/privacy-policy.html">Privacy Policy</a>
+                    <a href="/pages/contact.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="../assets/js/data/activities.js"></script>
+    <script src="../assets/js/data/tours.js"></script>
+    <script src="../assets/js/data/transportation.js"></script>
+    <script src="../assets/js/checkout.js"></script>
+</body>
+
+</html>

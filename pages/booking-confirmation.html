@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Booking confirmation for your Moroccan adventure - MerrakechyTours">
+    <title>Booking Confirmation | MerrakechyTours</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/Logos/logo.png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu Overlay (for mobile) -->
+    <div class="menu-overlay"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="/assets/images/Logos/logo.png" alt="Logo" class="preloader-logo">
+    </div>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Merrakechy<span>Tours </span></h1>
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-right">
+                             <a href="pages/services.html" class="btn btn-primary">Book Now</a>
+
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/hero/confirmation-hero.jpg');">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Booking Confirmed!</h1>
+                <p>Your Moroccan adventure has been successfully reserved</p>
+                <!-- Add this inside your hero section -->
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <!-- Step 1: Checkout -->
+                        <div class="progress-step active" data-step="1">
+                            <div class="step-circle">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="step-label">Checkout</div>
+                        </div>
+
+                        <!-- Progress Line -->
+                        <div class="progress-line"></div>
+
+                        <!-- Step 2: Confirm -->
+                        <div class="progress-step" data-step="2">
+                            <div class="step-circle">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="step-label">Confirm</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Section -->
+    <section class="confirmation-section section-padding">
+        <div class="container">
+            <div class="confirmation-container">
+                <div class="confirmation-header">
+                    <div class="confirmation-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="confirmation-title">
+                        <h2>Thank You for Your Booking!</h2>
+                        <p>Your reservation has been successfully placed. A confirmation has been sent to your email.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="booking-details">
+                    <div class="booking-number">
+                        <span class="label">Booking Reference:</span>
+                        <span class="value" id="booking-number">MRT-000000</span>
+                    </div>
+
+                    <div class="booking-info">
+                        <div class="info-column">
+                            <h3>Booking Information</h3>
+                            <ul>
+                                <li><span>Program:</span> <span id="program-name">Loading...</span></li>
+                                <li><span>Date:</span> <span id="booking-date">Loading...</span></li>
+                                <li><span>Guests:</span> <span id="booking-guests">Loading...</span></li>
+                                <li><span>Total Price:</span> <span id="booking-price">Loading...</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="info-column">
+                            <h3>Contact Information</h3>
+                            <ul>
+                                <li><span>Name:</span> <span id="customer-name">Loading...</span></li>
+                                <li><span>Email:</span> <span id="customer-email">Loading...</span></li>
+                                <li><span>Phone:</span> <span id="customer-phone">Loading...</span></li>
+                                <li><span>Special Requests:</span> <span id="special-requests">None</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="payment-info">
+                        <h3>Payment Information</h3>
+                        <p>As per our policy, no payment is required at this time. You'll pay directly upon arrival/tour
+                            start.</p>
+                        <p>Our team will contact you within 24 hours to confirm all details.</p>
+                    </div>
+                </div>
+
+                <div class="confirmation-actions">
+                    <a href="javascript:window.print()" class="btn btn-secondary"><i class="fas fa-print"></i> Print
+                        Confirmation</a>
+                    <a href="../index.html" class="btn btn-primary">Return to Homepage</a>
+                </div>
+
+                <div class="what-next">
+                    <h3>What Happens Next?</h3>
+                    <ol>
+                        <li>You'll receive a confirmation email shortly with all booking details.</li>
+                        <li>Our team will review your booking and contact you within 24 hours.</li>
+                        <li>Get ready for your amazing Moroccan adventure!</li>
+                    </ol>
+                    <p>If you have any questions, feel free to <a href="contact.html">contact us</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Section -->
+    <section class="recommended-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>You Might Also Like</h2>
+                <p>Discover more amazing experiences in Morocco</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Dynamic recommended programs will be added by JavaScript -->
+                <div id="recommended-programs"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../assets/images/Logos/logo.png" alt="MerrakechyTours Logo" class="footer-logo">
+                        </a>
+                    </div>
+                    <p>We provide authentic travel experiences in Morocco, focusing on activities, tours, and
+                        transportation services that showcase the best of our beautiful country.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> MerrakechyTours Office, Bab Al Khmis, Marrakech 40000,
+                            Morocco</li>
+                        <li><i class="fas fa-phone"></i> +212666698732</li>
+                        <li><i class="fas fa-envelope"></i> aitaliyassir55@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Open Daily: 8AM - 8PM</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 MerrakechyTours. All rights reserved. Powered by SiteQome</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/pages/privacy-policy.html">Privacy Policy</a>
+                    <a href="/pages/contact.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/data/activities.js"></script>
+    <script src="../assets/js/data/tours.js"></script>
+    <script src="../assets/js/data/transportation.js"></script>
+    <script src="../assets/js/confirmation.js"></script>
+    <script>
+        // Quick fix for booking confirmation page
+        document.addEventListener('DOMContentLoaded', function () {
+            // Remove splash screen if it exists
+            const splash = document.getElementById('splash-screen');
+            if (splash) {
+                splash.remove();
+            }
+
+            // Get booking info from localStorage
+            const bookingInfoJson = localStorage.getItem('bookingInfo');
+
+            if (bookingInfoJson) {
+                try {
+                    const bookingInfo = JSON.parse(bookingInfoJson);
+
+                    // Display booking details
+                    document.getElementById('booking-number').textContent = bookingInfo.bookingNumber || 'MK' + Date.now().toString().slice(-6);
+                    document.getElementById('program-name').textContent = bookingInfo.programName || 'N/A';
+                    document.getElementById('booking-date').textContent = bookingInfo.date || 'N/A';
+                    document.getElementById('booking-guests').textContent = `${bookingInfo.adults || 0} adult(s), ${bookingInfo.children || 0} child(ren)`;
+                    document.getElementById('booking-price').textContent = `$${bookingInfo.price || '0'}`;
+
+                    document.getElementById('customer-name').textContent = bookingInfo.customerName || 'N/A';
+                    document.getElementById('customer-email').textContent = bookingInfo.customerEmail || 'N/A';
+                    document.getElementById('customer-phone').textContent = bookingInfo.customerPhone || 'N/A';
+
+                    if (bookingInfo.specialRequests) {
+                        document.getElementById('special-requests').textContent = bookingInfo.specialRequests;
+                    }
+
+                } catch (error) {
+                    console.error('Error parsing booking info:', error);
+                }
+            } else {
+                console.log('No booking info found');
+            }
+        });
+    </script>
+</body>
+
+</html>

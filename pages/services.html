@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore our range of tours, activities, and transportation services across Morocco">
+    <title>Services | MerrakechyTours</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/Logos/logo.png">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu Overlay (for mobile) -->
+    <div class="menu-overlay"></div>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="/assets/images/Logos/logo.png" alt="Logo" class="preloader-logo">
+    </div>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="../index.html">
+                        <h1>Merrakechy<span>Tours </span></h1>
+
+                    </a>
+                </div>
+
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html" class="active">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-right">
+                    <a href="services.html" class="btn btn-primary">Book Now</a>
+
+                    <button class="mobile-menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section class="page-hero"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/activities/quad1.jpeg');">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Our Services</h1>
+                <p>Discover our wide range of tours, activities, and transportation services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Filter Section -->
+    <section class="services-filter-section">
+        <div class="container">
+            <div class="services-filter">
+                <button class="filter-btn active" data-filter="activities">Activities</button>
+                <button class="filter-btn" data-filter="tours">Tours</button>
+                <button class="filter-btn" data-filter="transportation">Transportation</button>
+                <!-- <button class="filter-btn" data-filter="rentals">Rentals</button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Content Section -->
+    <section class="services-content-section section-padding">
+        <div class="container">
+            <!-- Activities Section -->
+            <div class="content-section active" id="activities">
+                <div class="section-header">
+                    <h2>Activities</h2>
+                    <p>Exciting experiences to enhance your Moroccan adventure</p>
+                </div>
+
+                <div class="content-filter">
+                    <button class="content-filter-btn active" data-category="all-activities">All Activities</button>
+                    <button class="content-filter-btn" data-category="desert-activities">Desert Activities</button>
+                    <button class="content-filter-btn" data-category="cultural-activities">Cultural Activities</button>
+                    <button class="content-filter-btn" data-category="adventure-activities">Adventure
+                        Activities</button>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Desert Activities -->
+                    <!-- Activity 2: Quad Biking -->
+                    <div class="service-card desert-activities"
+                        data-url="details.html?category=activity&id=quad-biking">
+                        <div class="service-image">
+                            <img src="../assets/images/activities/quad1.jpeg" alt="Quad Biking">
+                            <div class="service-badge">Best Seller</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Palmeraie Quad Biking</h3>
+                                <div class="service-price">From <span>€30</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Palmeraie</span>
+                            </div>
+                            <p>Get your adrenaline pumping with an exciting quad biking adventure through the unique
+                                terrain of the Agafay Desert, featuring stunning views of the Atlas Mountains.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.9 (95 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=activity&id=quad-biking" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=activity&id=quad-biking" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Activity 1: Camel Ride -->
+                    <div class="service-card desert-activities" data-url="details.html?category=activity&id=camel-ride">
+                        <div class="service-image">
+                            <img src="../assets/images/activities/camel.jpeg" alt="Camel Trek">
+                            <div class="service-badge">Popular</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Camel Ride in the Palmeraie</h3>
+                                <div class="service-price">From <span>€20</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Marrakech</span>
+                            </div>
+                            <p>Enjoy a relaxing camel ride through the palm groves of the Marrakech oasis, a traditional
+                                Moroccan experience with stunning views and cultural insights.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.7 (128 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=activity&id=camel-ride" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=activity&id=camel-ride" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Activity 7: Hot Air Balloon -->
+                    <div class="service-card adventure-activities"
+                        data-url="details.html?category=activity&id=hot-air-balloon">
+                        <div class="service-image">
+                            <img src="../assets/images/activities/ballon.jpg" alt="Hot Air Balloon">
+                            <div class="service-badge">Premium</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Hot Air Balloon Experience</h3>
+                                <div class="service-price">From <span>€170</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Atlas Mountains</span>
+                            </div>
+                            <p>Soar above the Atlas Mountains at dawn for breathtaking views of villages, mountains, and
+                                desert landscapes, followed by a traditional Berber breakfast.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (78 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=activity&id=hot-air-balloon" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=activity&id=hot-air-balloon"
+                                    class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Activity 3: Desert Camping 
+                    <div class="service-card desert-activities">
+                        <div class="service-image">
+                            <img src="../assets/images/activities/desert_camping.jpg" alt="Agafay Desert Overnight">
+                            <div class="service-badge">New Experience</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Agafay Desert Sunset Dinner and Show</h3>
+                                <div class="service-price">From <span>€45</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="far fa-clock"></i> 6 hours</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Agafay Desert</span>
+                            </div>
+                            <p>Escape to the serene Agafay Desert for a magical sunset, a traditional dinner under the stars, and a night in a luxury tent.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.9 (124 reviews)</span>
+                            </div>
+                            <div class="service-features">
+                                <span><i class="fas fa-bed"></i> Sunset</span>
+                                <span><i class="fas fa-utensils"></i> Traditional Dinner</span>
+                                <span><i class="fas fa-music"></i> Live Music</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=activity&id=agafay-overnight"
+                                    class="btn btn-outline">View Details</a>
+                                <a href="checkout.html?category=activity&id=agafay-overnight"
+                                    class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!-- Cultural Activities -->
+                    <!-- Activity 4: Cooking Class -->
+                    <div class="service-card cultural-activities"
+                        data-url="details.html?category=activity&id=cooking-class">
+                        <div class="service-image">
+                            <img src="../assets/images/activities/cooking-class.jpg" alt="Cooking Class">
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Moroccan Cooking Workshop</h3>
+                                <div class="service-price">From <span>€45</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Marrakech Medina</span>
+                            </div>
+                            <p>Learn to prepare authentic Moroccan dishes with local chefs. Visit a traditional market
+                                for ingredients and enjoy the meal you create in a beautiful riad setting.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (156 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=activity&id=cooking-class" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=activity&id=cooking-class" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Activity: Majorelle Garden Tour -->
+                    <div class="service-card cultural-activities"
+                        data-url="details.html?category=activity&id=majorelle-garden">
+                        <div class="service-image">
+                            <img src="../assets/images/activities/majorel.webp" alt="Majorelle Garden Tour">
+                            <div class="service-badge">Peaceful</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Majorelle gardens and ramparts</h3>
+                                <div class="service-price">From <span>€25</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Marrakech</span>
+                            </div>
+                            <p>Discover Marrakech’s rich heritage with a guided visit to its ancient ramparts, the
+                                enchanting Majorelle Garden, and the iconic Berber and Yves Saint Laurent museums.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.6 (189 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=activity&id=majorelle-garden"
+                                    class="btn btn-outline">View Details</a>
+                                <a href="checkout.html?category=activity&id=majorelle-garden"
+                                    class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity 5: Hammam & Spa -->
+                    <div class="service-card cultural-activities"
+                        data-url="details.html?category=activity&id=hammam-spa">
+                        <div class="service-image">
+                            <img src="../assets/images/activities/hammam.jpg" alt="Hammam & Spa">
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Hammam & Spa Experience</h3>
+                                <div class="service-price">From <span>€50</span></div>
+                            </div>
+                            <div class="service-meta">
+
+                                <span><i class="fas fa-map-marker-alt"></i> Marrakech</span>
+                            </div>
+                            <p>Indulge in a traditional Moroccan hammam bath and relaxing massage with argan oil, a
+                                rejuvenating experience for body and mind.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.7 (112 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=activity&id=hammam-spa" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=activity&id=hammam-spa" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Tours Section -->
+            <div class="content-section" id="tours">
+                <div class="section-header">
+                    <h2>Tours</h2>
+                    <p>Guided excursions to the most beautiful destinations in Morocco</p>
+                </div>
+
+                <div class="content-filter">
+                    <button class="content-filter-btn active" data-category="all-tours">All Tours</button>
+                    <button class="content-filter-btn" data-category="day-trips">Day Trips</button>
+                    <button class="content-filter-btn" data-category="multi-day-tours">Multi-Day Tours</button>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Day Trips -->
+                    <!-- Tour 1: Ourika Valley -->
+                    <div class="service-card day-trips" data-url="details.html?category=tour&id=ourika-valley">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/ourika-valley.jpg" alt="Ourika Valley Tour">
+                            <div class="service-badge">Popular</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Ourika Valley Day Trip</h3>
+                                <div class="service-price">From <span>€20</span></div>
+                            </div>
+                            <div class="service-meta">
+
+                                <span><i class="fas fa-map-marker-alt"></i> Atlas Mountains</span>
+                            </div>
+                            <p>Discover the Ourika Valley's lush landscapes and traditional Berber villages in the Atlas
+                                Mountains foothills, including a visit to the spectacular Setti Fatma waterfalls.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.7 (187 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=ourika-valley" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=ourika-valley" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 2: Ouzoud Waterfalls -->
+                    <div class="service-card day-trips" data-url="details.html?category=tour&id=ouzoud-waterfalls">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/ozod.jpeg" alt="Ouzoud Waterfalls">
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Ouzoud Waterfalls Day Trip</h3>
+                                <div class="service-price">From <span>€20</span></div>
+                            </div>
+                            <div class="service-meta">
+
+                                <span><i class="fas fa-map-marker-alt"></i> Middle Atlas</span>
+                            </div>
+                            <p>Visit the spectacular Ouzoud Waterfalls, with their 110-meter cascades surrounded by lush
+                                vegetation. Enjoy a boat ride, spot Barbary macaques, and have lunch with a view.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (156 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=ouzoud-waterfalls" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=ouzoud-waterfalls" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour: Marrakech City Tour -->
+                    <div class="service-card cultural-activities"
+                        data-url="details.html?category=tour&id=marrakech-city-tour">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/marrakech.jpeg" alt="Marrakech City Tour">
+                            <div class="service-badge">Local Guide</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Marrakech City Tour</h3>
+                                <div class="service-price">From <span>€60</span></div>
+                            </div>
+                            <div class="service-meta">
+
+                                <span><i class="fas fa-map-marker-alt"></i> Marrakech Medina</span>
+                            </div>
+                            <p>Dive into the heart of Marrakech with a passionate local guide through vibrant souks,
+                                historic palaces, hidden gardens, and the legendary Djemaa el-Fna square.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (289 reviews)</span>
+                            </div>
+                            <div class="service-features">
+                                <span><i class="fas fa-walking"></i> Walking Tour</span>
+                                <span><i class="fas fa-mosque"></i> Historic Sites</span>
+                                <span><i class="fas fa-shopping-bag"></i> Souks Visit</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=marrakech-city-tour" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=marrakech-city-tour"
+                                    class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 3: Essaouira -->
+                    <div class="service-card day-trips" data-url="details.html?category=tour&id=essaouira">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/essaouira.jpg" alt="Essaouira Day Trip">
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Essaouira Day Trip</h3>
+                                <div class="service-price">From <span>€20</span></div>
+                            </div>
+                            <div class="service-meta">
+
+                                <span><i class="fas fa-map-marker-alt"></i> Atlantic Coast</span>
+                            </div>
+                            <p>Discover the charming coastal town of Essaouira with its blue and white medina, historic
+                                port, and beautiful beaches. Enjoy fresh seafood and the relaxed atmosphere.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.7 (142 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=essaouira" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=essaouira" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 4: Atlas Mountains -->
+                    <div class="service-card day-trips" data-url="details.html?category=tour&id=imlil-atlas">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/imlil-atlas.jpg" alt="Atlas Mountains Day Trip">
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Imlil Atlas Mountains Tour</h3>
+                                <div class="service-price">From <span>€20</span></div>
+                            </div>
+                            <div class="service-meta">
+
+                                <span><i class="fas fa-map-marker-alt"></i> High Atlas Mountains</span>
+                            </div>
+                            <p>Hike through stunning mountain landscapes and traditional Berber villages at the foot of
+                                Mount Toubkal, North Africa's highest peak.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.9 (109 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=imlil-atlas" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=imlil-atlas" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 5: Agafay Desert -->
+                    <div class="service-card day-trips" data-url="details.html?category=tour&id=agafay-desert">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/agafay.jpg" alt="Agafay Desert Day Trip">
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>Private trip to Agafay Desert </h3>
+                                <div class="service-price">From <span>€60</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="far fa-clock"></i> Half Day</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Agafay Desert</span>
+                            </div>
+                            <p>Experience the lunar-like landscape of the Agafay Desert just outside Marrakech. Enjoy
+                                camel riding, traditional lunch in a Berber tent, and stunning Atlas Mountains views.
+                            </p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (98 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=agafay-desert" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=agafay-desert" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tour 7: Ourzazate Desert -->
+                    <div class="service-card day-trips" data-url="details.html?category=tour&id=ouarzazate-3-days">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/ourzazat1.jpeg" alt="Ourzazate Desert Tour">
+                            <div class="service-badge">Best Seller</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3> Ourzazate Tour</h3>
+                                <div class="service-price">From <span>€20</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Ourzazate city</span>
+                            </div>
+                            <p>Experience the magic of the Zagora Desert with an overnight stay in a traditional Berber
+                                camp, camel trekking, and a visit to the ancient Kasbah of Aït Benhaddou.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (145 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=ouarzazate-3-days" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=ouarzazate-3-days" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multi-Day Tours -->
+                    <!-- Tour 6: Zagora Desert -->
+                    <div class="service-card multi-day-tours" data-url="details.html?category=tour&id=zagora-2-days">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/zagora-desert.jpg.jpeg" alt="Zagora Desert Tour">
+                            <div class="service-badge">Best Seller</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>2-Day Zagora Desert Tour</h3>
+                                <div class="service-price">From <span>€60</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Zagora Desert</span>
+                            </div>
+                            <p>Experience the magic of the Zagora Desert with an overnight stay in a traditional Berber
+                                camp, camel trekking, and a visit to the ancient Kasbah of Aït Benhaddou.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (145 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=zagora-2-days" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=zagora-2-days" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tour 7: Merzouga Desert -->
+                    <div class="service-card multi-day-tours" data-url="details.html?category=tour&id=merzouga-3-days">
+                        <div class="service-image">
+                            <img src="../assets/images/tours/merzoga1.jpeg" alt="Merzouga Desert Tour">
+                            <div class="service-badge">Top Rated</div>
+                        </div>
+                        <div class="service-info">
+                            <div class="service-title">
+                                <h3>3-Day Merzouga Desert Tour</h3>
+                                <div class="service-price">From <span>€110</span></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Merzouga Desert</span>
+                            </div>
+                            <p>Travel from Marrakech to the stunning Sahara dunes of Merzouga. Ride camels at sunset,
+                                sleep in a Berber desert camp, and explore the Atlas Mountains and ancient kasbahs on
+                                this unforgettable 3-day trip.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.9 (267 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=tour&id=merzouga-3-days" class="btn btn-outline">View
+                                    Details</a>
+                                <a href="checkout.html?category=tour&id=merzouga-3-days" class="btn btn-primary">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Morocco Packages -->
+                    
+                </div>
+            </div>
+
+            <!-- Transportation Section -->
+            <div class="content-section" id="transportation">
+                <div class="section-header">
+                    <h2>Transportation</h2>
+                    <p>Reliable and comfortable transportation services throughout Morocco</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Transportation 1: Airport Transfers -->
+                    <div class="service-card" data-url="details.html?category=transportation&id=airport-transfer">
+                        <div class="service-image">
+                            <div class="service-icon">
+                                <img src="../assets/images/itinerary/Aeroport-Marrakech.webp" alt="Transport"> 
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <h3>Airport Transfer Service</h3>
+                            <div class="service-title">
+                                <div class="service-price">From <span>€15</span><small>/vehicle</small></div>
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Marrakech</span>
+                            </div>
+                            <p>Hassle-free transfers between Marrakech Menara Airport and your accommodation with
+                                professional drivers and comfortable vehicles.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.8 (215 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=transportation&id=airport-transfer"
+                                    class="btn btn-outline">View Details</a>
+                                <a href="checkout.html?category=transportation&id=airport-transfer"
+                                    class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Transportation 2: Private Driver -->
+                    <div class="service-card" data-url="details.html?category=transportation&id=private-driver">
+                        <div class="service-image">
+                            <div class="service-icon">
+                                <img src="../assets/images/itinerary/Car_Pic.webp" alt="Transport">
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <h3>Private Car with Driver</h3>
+                            <div class="service-title">
+                            </div>
+                            <div class="service-meta">
+
+                                <span><i class="fas fa-map-marker-alt"></i> Marrakech & surroundings</span>
+                            </div>
+                            <p>Explore Morocco at your own pace with a professional driver and comfortable vehicle.
+                                Create your own itinerary or get recommendations from your experienced local driver.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>4.9 (78 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=transportation&id=private-driver"
+                                    class="btn btn-outline">View Details</a>
+                                <a href="checkout.html?category=transportation&id=private-driver"
+                                    class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transportation 3: Intercity Transfers -->
+                    <div class="service-card" data-url="details.html?category=transportation&id=intercity-transfer">
+                        <div class="service-image">
+                            <div class="service-icon">
+                                <img src="../assets/images/itinerary/car_fleet.webp" alt="Transport">
+                            </div>
+                        </div>
+                        <div class="service-info">
+                            <h3>City-to-City Transfer Service</h3>
+                            <div class="service-title">
+                            </div>
+                            <div class="service-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Various cities</span>
+                            </div>
+                            <p>Comfortable and direct transportation between Morocco's major cities and destinations in
+                                modern, air-conditioned vehicles with professional drivers.</p>
+                            <div class="service-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span>4.7 (93 reviews)</span>
+                            </div>
+                            <div class="service-actions">
+                                <a href="details.html?category=transportation&id=intercity-transfer"
+                                    class="btn btn-outline">View Details</a>
+                                <a href="checkout.html?category=transportation&id=intercity-transfer"
+                                    class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Destinations Section -->
+            <div class="content-section" id="destinations">
+                <div class="section-header">
+                    <h2>Destinations</h2>
+                    <p>Discover the most beautiful places in Morocco</p>
+                </div>
+
+                <div class="destinations-grid">
+                    <!-- Destination 1: Marrakech -->
+                    <div class="destination-card">
+                        <img src="../assets/images/destinations/marrakech.jpg" alt="Marrakech">
+                        <div class="destination-content">
+                            <h3>Marrakech</h3>
+                            <p>The cultural heart of Morocco with vibrant souks and historic palaces</p>
+                            <a href="details.html?category=destination&id=marrakech" class="btn btn-light">Explore</a>
+                        </div>
+                    </div>
+
+                    <!-- Destination 2: Sahara Desert -->
+                    <div class="destination-card">
+                        <img src="../assets/images/destinations/sarah-desert.jpg" alt="Sahara Desert">
+                        <div class="destination-content">
+                            <h3>Sahara Desert</h3>
+                            <p>Endless golden dunes and starry nights in the world's largest desert</p>
+                            <a href="details.html?category=destination&id=sahara-desert"
+                                class="btn btn-light">Explore</a>
+                        </div>
+                    </div>
+
+                    <!-- Destination 3: Atlas Mountains -->
+                    <div class="destination-card">
+                        <img src="../assets/images/destinations/atlas-mountains.jpg" alt="Atlas Mountains">
+                        <div class="destination-content">
+                            <h3>Atlas Mountains</h3>
+                            <p>Breathtaking mountain ranges with traditional Berber villages</p>
+                            <a href="details.html?category=destination&id=atlas-mountains"
+                                class="btn btn-light">Explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rentals Section 
+             Add this new content section after the destinations section 
+            <div class="content-section" id="rentals">
+                <div class="section-header">
+                    <h2>Rentals</h2>
+                    <p>Quality rental options for bikes, cars, and accommodations</p>
+                </div>
+
+                <div class="rental-tabs">
+                    <div class="tab active" data-tab="bikes">Bikes</div>
+                    <div class="tab" data-tab="cars">Cars</div>
+                    <div class="tab" data-tab="homes">Homes & Villas</div>
+                </div>
+
+                 Bikes Tab Content 
+                <div class="tab-content active" id="bikes-content">
+                    <div class="services-grid">
+                         Bike Rental 1 
+                        <div class="service-card">
+                            <div class="service-image">
+                                <div class="service-icon">
+                                    <i class="fas fa-bicycle"></i>
+                                </div>
+                                <h3>City Bikes</h3>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-title">
+                                    <div class="service-price">From <span>€15</span><small>/day</small></div>
+                                </div>
+                                <div class="service-meta">
+                                    <span><i class="far fa-clock"></i> Up to 24 hours</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Marrakech</span>
+                                </div>
+                                <p>Comfortable city bikes perfect for exploring Marrakech at your own pace. Includes
+                                    helmet, lock, and optional map.</p>
+                                <div class="service-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span>4.7 (56 reviews)</span>
+                                </div>
+                                <div class="service-actions">
+                                    <a href="#" class="btn btn-outline service-details-btn"
+                                        data-service="city-bikes">View Details</a>
+                                    <a href="#" class="btn btn-primary service-book-btn" data-service="city-bikes">Rent
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                         Bike Rental 2 
+                        <div class="service-card">
+                            <div class="service-image">
+                                <div class="service-icon">
+                                    <i class="fas fa-motorcycle"></i>
+                                </div>
+                                <h3>Mountain Bikes</h3>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-title">
+                                    <div class="service-price">From <span>€25</span><small>/day</small></div>
+                                </div>
+                                <div class="service-meta">
+                                    <span><i class="far fa-clock"></i> Up to 24 hours</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Atlas Mountains</span>
+                                </div>
+                                <p>High-quality mountain bikes ideal for exploring trails in the Atlas Mountains.
+                                    Includes helmet, repair kit, and optional guide.</p>
+                                <div class="service-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.9 (42 reviews)</span>
+                                </div>
+                                <div class="service-actions">
+                                    <a href="#" class="btn btn-outline service-details-btn"
+                                        data-service="mountain-bikes">View Details</a>
+                                    <a href="#" class="btn btn-primary service-book-btn"
+                                        data-service="mountain-bikes">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 Cars Tab Content 
+                <div class="tab-content" id="cars-content">
+                    <div class="services-grid">
+                         Car Rental 1 
+                        <div class="service-card">
+                            <div class="service-image">
+                                <div class="service-icon">
+                                    <i class="fas fa-car"></i>
+                                </div>
+                                <h3>Economy Cars</h3>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-title">
+                                    <div class="service-price">From <span>€40</span><small>/day</small></div>
+                                </div>
+                                <div class="service-meta">
+                                    <span><i class="far fa-clock"></i> 1+ days</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Marrakech</span>
+                                </div>
+                                <p>Fuel-efficient economy cars perfect for city driving and day trips. Includes
+                                    insurance, unlimited mileage, and 24/7 assistance.</p>
+                                <div class="service-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span>4.6 (78 reviews)</span>
+                                </div>
+                                <div class="service-actions">
+                                    <a href="#" class="btn btn-outline service-details-btn"
+                                        data-service="economy-cars">View Details</a>
+                                    <a href="#" class="btn btn-primary service-book-btn"
+                                        data-service="economy-cars">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Car Rental 2 
+                        <div class="service-card">
+                            <div class="service-image">
+                                <div class="service-icon">
+                                    <i class="fas fa-car-side"></i>
+                                </div>
+                                <h3>4x4 SUVs</h3>
+                            </div>
+                            <div class="service-info">
+                                <div class="service-title">
+                                    <div class="service-price">From <span>€75</span><small>/day</small></div>
+                                </div>
+                                <div class="service-meta">
+                                    <span><i class="far fa-clock"></i> 1+ days</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Marrakech</span>
+                                </div>
+                                <p>Rugged 4x4 vehicles ideal for desert and mountain adventures. Includes insurance,
+                                    GPS, and 24/7 roadside assistance.</p>
+                                <div class="service-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.8 (65 reviews)</span>
+                                </div>
+                                <div class="service-actions">
+                                    <a href="#" class="btn btn-outline service-details-btn" data-service="suv-cars">View
+                                        Details</a>
+                                    <a href="#" class="btn btn-primary service-book-btn" data-service="suv-cars">Rent
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homes Tab Content 
+                <div class="tab-content" id="homes-content">
+                    <div class="services-grid">
+                        <!-- Home Rental 1 
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="../assets/images/rentals/riad-sample.jpg" alt="Traditional Riad">
+                            </div>
+                            <div class="service-info">
+                                <div class="service-title">
+                                    <h3>Traditional Riads</h3>
+                                    <div class="service-price">From <span>€120</span><small>/night</small></div>
+                                </div>
+                                <div class="service-meta">
+                                    <span><i class="fas fa-bed"></i> 2-5 Bedrooms</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Marrakech Medina</span>
+                                </div>
+                                <p>Authentic Moroccan riads in the heart of the Medina, featuring traditional
+                                    architecture, courtyard, and rooftop terrace.</p>
+                                <div class="service-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>4.9 (43 reviews)</span>
+                                </div>
+                                <div class="service-actions">
+                                    <a href="#" class="btn btn-outline service-details-btn"
+                                        data-service="traditional-riads">View Details</a>
+                                    <a href="#" class="btn btn-primary service-book-btn"
+                                        data-service="traditional-riads">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Home Rental 2 
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="../assets/images/rentals/villa-sample.jpg" alt="Luxury Villa">
+                            </div>
+                            <div class="service-info">
+                                <div class="service-title">
+                                    <h3>Luxury Villas</h3>
+                                    <div class="service-price">From <span>€250</span><small>/night</small></div>
+                                </div>
+                                <div class="service-meta">
+                                    <span><i class="fas fa-bed"></i> 3-6 Bedrooms</span>
+                                    <span><i class="fas fa-map-marker-alt"></i> Palmeraie</span>
+                                </div>
+                                <p>Stunning private villas with pools, gardens, and staff. Perfect for families or
+                                    groups seeking luxury and privacy.</p>
+                                <div class="service-rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span>5.0 (37 reviews)</span>
+                                </div>
+                                <div class="service-actions">
+                                    <a href="#" class="btn btn-outline service-details-btn"
+                                        data-service="luxury-villas">View Details</a>
+                                    <a href="#" class="btn btn-primary service-book-btn"
+                                        data-service="luxury-villas">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rental Info Box 
+                <div class="rental-info-box">
+                    <h3>Rental Information</h3>
+                    <div class="rental-info-content">
+                        <div class="rental-info-item">
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <h4>Security Deposit</h4>
+                                <p>All rentals require a security deposit, refundable upon return of items in good
+                                    condition.</p>
+                            </div>
+                        </div>
+                        <div class="rental-info-item">
+                            <i class="fas fa-id-card"></i>
+                            <div>
+                                <h4>Required Documents</h4>
+                                <p>Valid ID/passport and driver's license (for vehicles) are required for all rentals.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rental-info-item">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <div>
+                                <h4>Payment Options</h4>
+                                <p>We accept credit cards, cash, and bank transfers for rental payments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Contact btn-->
+
+    <div class="contact-options-wrapper">
+        <button class="contact-options-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+
+        <div class="contact-options-menu">
+            <div class="contact-option-title">Contact Us</div>
+            <a href="https://wa.me/+212666698732" class="contact-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp(1)</span>
+            </a>
+            <a href="https://wa.me/+212662016470" class="contact-option whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp(2)</span>
+            </a>
+            <a href="tel:+212666698732" class="contact-option phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call Us (1)</span>
+            </a>
+            <a href="tel:+212662016470" class="contact-option phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call Us (2)</span>
+            </a>
+            <a href="mailto:aitaliyassir55@gmail.com" class="contact-option email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../assets/images/Logos/logo.png" alt="MerrakechyTours Logo" class="footer-logo">
+                        </a>
+                    </div>
+                    <p>We provide authentic travel experiences in Morocco, focusing on activities, tours, and
+                        transportation services that showcase the best of our beautiful country.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> MerrakechyTours Office, Bab Al Khmis, Marrakech 40000,
+                            Morocco</li>
+                        <li><i class="fas fa-phone"></i> +212666698732</li>
+                        <li><i class="fas fa-envelope"></i> aitaliyassir55@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Open Daily: 8AM - 8PM</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 MerrakechyTours. All rights reserved. Powered by SiteQome</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/pages/privacy-policy.html">Privacy Policy</a>
+                    <a href="/pages/contact.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/services.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.service-card[data-url]');
+
+            cards.forEach(card => {
+                card.style.cursor = 'pointer';
+
+                card.addEventListener('click', function (e) {
+                    // Prevent if clicked on a button or link inside the card
+                    if (
+                        e.target.closest('a') ||
+                        e.target.tagName === 'A' ||
+                        e.target.classList.contains('btn')
+                    ) return;
+
+                    const url = this.getAttribute('data-url');
+                    if (url) window.location.href = url;
+                });
+            });
+        });
+    </script>
+    <!-- Agafay-style scroll reveal -->
+    <style>
+        .activity-card,
+        .tour-card,
+        .service-card {
+            opacity: 0;
+            transform: translateY(60px) scale(0.92);
+            transition: opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .reveal {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    </style>
+
+    <script>
+        window.addEventListener('load', () => {
+            const cards = document.querySelectorAll('.activity-card, .tour-card, .service-card');
+            const io = new IntersectionObserver(
+                (entries, obs) => {
+                    entries.forEach((entry, idx) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => entry.target.classList.add('reveal'), idx * 150);
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.15 }
+            );
+            cards.forEach(card => io.observe(card));
+        });
+    </script>
+</body>
+
+</html>
